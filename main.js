@@ -32,7 +32,7 @@ for (let i = 0; i < taleList.length; i++) {
         playSound(soundID);
     }
 
-    element.onkeyup = function (event) {
+    element.onkeydown = function (event) {
 
         console.log(event.code);
 
@@ -40,7 +40,7 @@ for (let i = 0; i < taleList.length; i++) {
             element.classList.add('ativa');
     }
 
-    element.onkeydown = function () {
+    element.onkeyup = function () {
         element.classList.remove('ativa');
     }
 }
